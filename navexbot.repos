@@ -1,0 +1,9 @@
+repositories:
+  navexbot/navexbot:
+    type: git
+    url: https://github.com/SAMUEL-CWC/navexbot.git
+    version: develop
+  navexbot/navexbot_msgs:
+    type: git
+    url: https://github.com/SAMUEL-CWC/navexbot_msgs.git
+    version: develop
