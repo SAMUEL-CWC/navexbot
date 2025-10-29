@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
-<robot name="Elegoo_to_urdf" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<robot name="navexbot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-<xacro:include filename="$(find Elegoo_to_urdf_description)/urdf/materials.xacro" />
-<xacro:include filename="$(find Elegoo_to_urdf_description)/urdf/Elegoo_to_urdf.trans" />
-<xacro:include filename="$(find Elegoo_to_urdf_description)/urdf/Elegoo_to_urdf.gazebo" />
+<xacro:include filename="$(find navexbot_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find navexbot_description)/urdf/navexbot.trans" />
+<xacro:include filename="$(find navexbot_description)/urdf/navexbot.gazebo" />
 <link name="base_link">
   <inertial>
     <origin xyz="-0.009115327490433861 0.00030805565808849657 0.07452875806975676" rpy="0 0 0"/>
@@ -13,14 +13,14 @@
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Elegoo_to_urdf_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find navexbot_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="black"/>
   </visual>
   <collision>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Elegoo_to_urdf_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find navexbot_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -34,14 +34,14 @@
   <visual>
     <origin xyz="-0.101915 0.017411 -0.048908" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Elegoo_to_urdf_description)/meshes/Dead_Plate_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find navexbot_description)/meshes/Dead_Plate_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.101915 0.017411 -0.048908" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Elegoo_to_urdf_description)/meshes/Dead_Plate_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find navexbot_description)/meshes/Dead_Plate_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -55,14 +55,14 @@
   <visual>
     <origin xyz="-0.100215 -0.001689 -0.051408" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Elegoo_to_urdf_description)/meshes/Servo_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find navexbot_description)/meshes/Servo_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="blue"/>
   </visual>
   <collision>
     <origin xyz="-0.100215 -0.001689 -0.051408" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Elegoo_to_urdf_description)/meshes/Servo_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find navexbot_description)/meshes/Servo_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -76,14 +76,14 @@
   <visual>
     <origin xyz="-0.08059 -0.001689 -0.065018" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Elegoo_to_urdf_description)/meshes/Sensor_Mount_Bracket_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find navexbot_description)/meshes/Sensor_Mount_Bracket_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.08059 -0.001689 -0.065018" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Elegoo_to_urdf_description)/meshes/Sensor_Mount_Bracket_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find navexbot_description)/meshes/Sensor_Mount_Bracket_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -97,14 +97,14 @@
   <visual>
     <origin xyz="-0.08959 -0.022039 -0.094368" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Elegoo_to_urdf_description)/meshes/Ultrasonic_Sensor_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find navexbot_description)/meshes/Ultrasonic_Sensor_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.08959 -0.022039 -0.094368" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Elegoo_to_urdf_description)/meshes/Ultrasonic_Sensor_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find navexbot_description)/meshes/Ultrasonic_Sensor_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -118,14 +118,14 @@
   <visual>
     <origin xyz="-0.045076 -6.4e-05 -0.176908" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Elegoo_to_urdf_description)/meshes/C1M1_appearance_V2_20230926.3d_model_v2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find navexbot_description)/meshes/C1M1_appearance_V2_20230926.3d_model_v2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="blue"/>
   </visual>
   <collision>
     <origin xyz="-0.045076 -6.4e-05 -0.176908" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Elegoo_to_urdf_description)/meshes/C1M1_appearance_V2_20230926.3d_model_v2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find navexbot_description)/meshes/C1M1_appearance_V2_20230926.3d_model_v2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -139,14 +139,14 @@
   <visual>
     <origin xyz="0.44 -0.266614 -0.653459" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Elegoo_to_urdf_description)/meshes/Power_Bank_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find navexbot_description)/meshes/Power_Bank_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="sage"/>
   </visual>
   <collision>
     <origin xyz="0.44 -0.266614 -0.653459" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Elegoo_to_urdf_description)/meshes/Power_Bank_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find navexbot_description)/meshes/Power_Bank_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -160,14 +160,14 @@
   <visual>
     <origin xyz="-0.069576 -0.039064 -0.112908" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Elegoo_to_urdf_description)/meshes/RASPBERRY_PI_5_1_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find navexbot_description)/meshes/RASPBERRY_PI_5_1_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="green"/>
   </visual>
   <collision>
     <origin xyz="-0.069576 -0.039064 -0.112908" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Elegoo_to_urdf_description)/meshes/RASPBERRY_PI_5_1_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find navexbot_description)/meshes/RASPBERRY_PI_5_1_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -181,14 +181,14 @@
   <visual>
     <origin xyz="0.460696 -0.427264 -0.542551" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Elegoo_to_urdf_description)/meshes/Line_Tracking_Module_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find navexbot_description)/meshes/Line_Tracking_Module_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.460696 -0.427264 -0.542551" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Elegoo_to_urdf_description)/meshes/Line_Tracking_Module_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find navexbot_description)/meshes/Line_Tracking_Module_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -202,14 +202,14 @@
   <visual>
     <origin xyz="-0.021607 0.036831 -0.048908" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Elegoo_to_urdf_description)/meshes/Arduino_Mega_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find navexbot_description)/meshes/Arduino_Mega_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="teal"/>
   </visual>
   <collision>
     <origin xyz="-0.021607 0.036831 -0.048908" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Elegoo_to_urdf_description)/meshes/Arduino_Mega_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find navexbot_description)/meshes/Arduino_Mega_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -223,14 +223,14 @@
   <visual>
     <origin xyz="-0.083115 0.078424 -0.065747" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Elegoo_to_urdf_description)/meshes/Expansion_Board_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find navexbot_description)/meshes/Expansion_Board_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.083115 0.078424 -0.065747" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Elegoo_to_urdf_description)/meshes/Expansion_Board_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find navexbot_description)/meshes/Expansion_Board_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -244,14 +244,14 @@
   <visual>
     <origin xyz="0.393843 -0.36047 -0.558301" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Elegoo_to_urdf_description)/meshes/wheel_1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find navexbot_description)/meshes/wheel_1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="yellow"/>
   </visual>
   <collision>
     <origin xyz="0.393843 -0.36047 -0.558301" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Elegoo_to_urdf_description)/meshes/wheel_1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find navexbot_description)/meshes/wheel_1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -265,14 +265,14 @@
   <visual>
     <origin xyz="0.486949 -0.36047 -0.558301" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Elegoo_to_urdf_description)/meshes/wheel_4_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find navexbot_description)/meshes/wheel_4_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="yellow"/>
   </visual>
   <collision>
     <origin xyz="0.486949 -0.36047 -0.558301" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Elegoo_to_urdf_description)/meshes/wheel_4_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find navexbot_description)/meshes/wheel_4_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -286,14 +286,14 @@
   <visual>
     <origin xyz="0.486949 -0.278539 -0.558301" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Elegoo_to_urdf_description)/meshes/wheel_3_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find navexbot_description)/meshes/wheel_3_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="yellow"/>
   </visual>
   <collision>
     <origin xyz="0.486949 -0.278539 -0.558301" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Elegoo_to_urdf_description)/meshes/wheel_3_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find navexbot_description)/meshes/wheel_3_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -307,14 +307,14 @@
   <visual>
     <origin xyz="0.393843 -0.278539 -0.558301" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Elegoo_to_urdf_description)/meshes/wheel_2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find navexbot_description)/meshes/wheel_2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="yellow"/>
   </visual>
   <collision>
     <origin xyz="0.393843 -0.278539 -0.558301" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Elegoo_to_urdf_description)/meshes/wheel_2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find navexbot_description)/meshes/wheel_2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -379,7 +379,7 @@
   <parent link="Arduino_Mega_v1_1"/>
   <child link="Expansion_Board_1"/>
 </joint>
-
+ 
 <joint name="Revolute 11" type="continuous">
   <origin xyz="-0.393843 0.36047 0.558301" rpy="0 0 0"/>
   <parent link="base_link"/>

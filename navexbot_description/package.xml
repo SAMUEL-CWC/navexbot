@@ -1,11 +1,13 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-<name>Elegoo_to_urdf_description</name>
+<name>navexbot_description</name>
   <version>0.0.0</version>
-<description>The Elegoo_to_urdf_description package</description>
+<description>The navexbot_description package</description>
   <maintainer email="todo@todo.com">author</maintainer>
   <license>TODO: License declaration</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
 
   <depend>xacro</depend>
   <depend>rviz2</depend>
