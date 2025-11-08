@@ -9,6 +9,10 @@
   <color rgba="0.000 0.000 0.000 1.000"/>
 </material>
 
+<material name="light black">
+  <color rgba="0.400 0.400 0.400 1.000"/>
+</material>
+
 <material name="blue">
   <color rgba="0.043 0.651 0.875 1.000"/>
 </material>
@@ -28,5 +32,9 @@
 <material name="green">
   <color rgba="0.388 0.639 0.380 1.000"/>
 </material>
+
+  <material name="brown">
+    <color rgba="0.8706 0.8118 0.7647 1.0"/>
+  </material>
 
 </robot>
