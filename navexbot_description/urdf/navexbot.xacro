@@ -6,8 +6,8 @@
 <xacro:include filename="$(find navexbot_description)/urdf/navexbot.gazebo" />
 <link name="base_link">
   <inertial>
-    <origin xyz="0.3138020472259591 0.707742333605108 0.651058897421196" rpy="0 0 0"/>
-    <mass value="0.6870544631870525"/>
+    <origin xyz="-0.009254790102277678 0.00030185646140882204 0.06936285961362405" rpy="0 0 0"/>
+    <mass value="0.6870543200175391"/>
     <inertia ixx="0.002614" iyy="0.004939" izz="0.003796" ixy="3e-06" iyz="6e-06" ixz="-0.000506"/>
   </inertial>
   <visual>
@@ -27,19 +27,19 @@
 
 <link name="Wheel_LF_1">
   <inertial>
-    <origin xyz="-0.3230569549805825 -0.6888368425088942 -0.5816957930037309" rpy="0 0 0"/>
+    <origin xyz="1.8510277319250257e-07 0.018603678461580245 1.5221070862048158e-07" rpy="0 0 0"/>
     <mass value="0.037002439542276624"/>
     <inertia ixx="1.5e-05" iyy="2.5e-05" izz="1.5e-05" ixy="-0.0" iyz="0.0" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.685046 -1.461895 -1.179142" rpy="0 0 0"/>
+    <origin xyz="-0.038932 -0.047014 -0.01575" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find navexbot_description)/meshes/Wheel_LF_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.685046 -1.461895 -1.179142" rpy="0 0 0"/>
+    <origin xyz="-0.038932 -0.047014 -0.01575" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find navexbot_description)/meshes/Wheel_LF_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -48,19 +48,19 @@
 
 <link name="Wheel_LB_1">
   <inertial>
-    <origin xyz="-0.32305733222430744 -0.6888367667394968 -0.5816959511622183" rpy="0 0 0"/>
-    <mass value="0.037002439542276666"/>
+    <origin xyz="-1.921409517532946e-07 0.018603754230977626 -5.947778727866115e-09" rpy="0 0 0"/>
+    <mass value="0.03700243954227665"/>
     <inertia ixx="1.5e-05" iyy="2.5e-05" izz="1.5e-05" ixy="-0.0" iyz="0.0" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.603115 -1.461895 -1.179142" rpy="0 0 0"/>
+    <origin xyz="0.042999 -0.047014 -0.01575" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find navexbot_description)/meshes/Wheel_LB_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.603115 -1.461895 -1.179142" rpy="0 0 0"/>
+    <origin xyz="0.042999 -0.047014 -0.01575" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find navexbot_description)/meshes/Wheel_LB_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -69,19 +69,19 @@
 
 <link name="Wheel_RF_1">
   <inertial>
-    <origin xyz="-0.323056979218717 -0.7260449432999149 -0.5816957849999069" rpy="0 0 0"/>
+    <origin xyz="1.6086463860282008e-07 -0.018604422329440283 1.602145324429427e-07" rpy="0 0 0"/>
     <mass value="0.03700239760564051"/>
     <inertia ixx="1.5e-05" iyy="2.5e-05" izz="1.5e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.685046 -1.368789 -1.179142" rpy="0 0 0"/>
+    <origin xyz="-0.038932 0.046092 -0.01575" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find navexbot_description)/meshes/Wheel_RF_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.685046 -1.368789 -1.179142" rpy="0 0 0"/>
+    <origin xyz="-0.038932 0.046092 -0.01575" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find navexbot_description)/meshes/Wheel_RF_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -90,19 +90,19 @@
 
 <link name="Wheel_RB_1">
   <inertial>
-    <origin xyz="-0.3230573508026159 -0.7260450190347004 -0.5816959431583748" rpy="0 0 0"/>
+    <origin xyz="-2.107192602282537e-07 -0.018604498064225893 2.0560647628897755e-09" rpy="0 0 0"/>
     <mass value="0.0370023992249136"/>
     <inertia ixx="1.5e-05" iyy="2.5e-05" izz="1.5e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.603115 -1.368789 -1.179142" rpy="0 0 0"/>
+    <origin xyz="0.042999 0.046092 -0.01575" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find navexbot_description)/meshes/Wheel_RB_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.603115 -1.368789 -1.179142" rpy="0 0 0"/>
+    <origin xyz="0.042999 0.046092 -0.01575" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find navexbot_description)/meshes/Wheel_RB_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -111,19 +111,19 @@
 
 <link name="Line_Tracking_Module_1">
   <inertial>
-    <origin xyz="-0.3104484455904361 -0.7272508096903704 -0.5856112406290825" rpy="0 0 0"/>
+    <origin xyz="0.0126086944929195 -0.01981028871989617 -0.003915295414642989" rpy="0 0 0"/>
     <mass value="0.011999979009967751"/>
     <inertia ixx="2e-06" iyy="1e-06" izz="3e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.726234 -1.435644 -1.163392" rpy="0 0 0"/>
+    <origin xyz="-0.08012 -0.020763 0.0" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find navexbot_description)/meshes/Line_Tracking_Module_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.726234 -1.435644 -1.163392" rpy="0 0 0"/>
+    <origin xyz="-0.08012 -0.020763 0.0" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find navexbot_description)/meshes/Line_Tracking_Module_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -132,19 +132,19 @@
 
 <link name="Lidar_1">
   <inertial>
-    <origin xyz="8.356952260829553e-05 -9.376054348042562e-05 0.013994586411218868" rpy="0 0 0"/>
+    <origin xyz="8.370960596393306e-05 -9.423957300589091e-05 0.013994531625658113" rpy="0 0 0"/>
     <mass value="0.1179926993495319"/>
     <inertia ixx="5.2e-05" iyy="5.2e-05" izz="7.3e-05" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.368133 -0.707504 -0.736604" rpy="0 0 0"/>
+    <origin xyz="-0.045076 -6.4e-05 -0.154908" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find navexbot_description)/meshes/Lidar_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.368133 -0.707504 -0.736604" rpy="0 0 0"/>
+    <origin xyz="-0.045076 -6.4e-05 -0.154908" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find navexbot_description)/meshes/Lidar_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -153,19 +153,19 @@
 
 <link name="Power_Bank_1">
   <inertial>
-    <origin xyz="-0.31121848988774364 -0.7074930205641167 -0.5656959324503201" rpy="0 0 0"/>
+    <origin xyz="0.011837650195611983 -5.249959364234352e-05 0.016000012764119165" rpy="0 0 0"/>
     <mass value="0.5000878365425067"/>
     <inertia ixx="0.000613" iyy="0.000213" izz="0.000743" ixy="0.0" iyz="-0.0" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.591189 -1.414945 -1.2743" rpy="0 0 0"/>
+    <origin xyz="0.054924 -6.4e-05 -0.110908" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find navexbot_description)/meshes/Power_Bank_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.591189 -1.414945 -1.2743" rpy="0 0 0"/>
+    <origin xyz="0.054924 -6.4e-05 -0.110908" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find navexbot_description)/meshes/Power_Bank_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -174,19 +174,19 @@
 
 <link name="Raspberry_Pi_5_1">
   <inertial>
-    <origin xyz="-0.024667633543721312 0.0032869216481536956 0.005320610498352973" rpy="0 0 0"/>
+    <origin xyz="-0.024667493460366292 0.0032864426186286974 0.005320555712791164" rpy="0 0 0"/>
     <mass value="0.07999928086336155"/>
     <inertia ixx="5.3e-05" iyy="2.3e-05" izz="7.2e-05" ixy="-1e-06" iyz="6e-06" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.392633 -0.688504 -0.692604" rpy="0 0 0"/>
+    <origin xyz="-0.069576 0.018936 -0.110908" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find navexbot_description)/meshes/Raspberry_Pi_5_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.392633 -0.688504 -0.692604" rpy="0 0 0"/>
+    <origin xyz="-0.069576 0.018936 -0.110908" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find navexbot_description)/meshes/Raspberry_Pi_5_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -195,19 +195,19 @@
 
 <link name="Dead_Plate_1">
   <inertial>
-    <origin xyz="-0.015250041948919713 0.010037707281413288 0.0012500547855613942" rpy="0 0 0"/>
+    <origin xyz="-0.01524990186556413 0.010037228251887697 0.001250000000001042" rpy="0 0 0"/>
     <mass value="0.00600080930940492"/>
     <inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.424972 -0.690029 -0.628604" rpy="0 0 0"/>
+    <origin xyz="-0.101915 0.017411 -0.046908" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find navexbot_description)/meshes/Dead_Plate_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.424972 -0.690029 -0.628604" rpy="0 0 0"/>
+    <origin xyz="-0.101915 0.017411 -0.046908" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find navexbot_description)/meshes/Dead_Plate_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -216,19 +216,19 @@
 
 <link name="Servo_1">
   <inertial>
-    <origin xyz="-0.014192217781553274 1.5046113166494735e-07 -0.003883121334695594" rpy="0 0 0"/>
+    <origin xyz="-0.014192077698197803 -3.2856839390893976e-07 -0.0038831761202560294" rpy="0 0 0"/>
     <mass value="0.009861404357094051"/>
-    <inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.423272 -0.709129 -0.631104" rpy="0 0 0"/>
+    <origin xyz="-0.100215 -0.001689 -0.049408" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find navexbot_description)/meshes/Servo_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.423272 -0.709129 -0.631104" rpy="0 0 0"/>
+    <origin xyz="-0.100215 -0.001689 -0.049408" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find navexbot_description)/meshes/Servo_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -237,19 +237,19 @@
 
 <link name="Sensor_Mount_Bracket_1">
   <inertial>
-    <origin xyz="0.004874275365480851 1.5046111778715954e-07 0.018650570905780928" rpy="0 0 0"/>
+    <origin xyz="0.004874415448836419 -3.285684078318304e-07 0.018650516120220402" rpy="0 0 0"/>
     <mass value="0.006020344936903853"/>
     <inertia ixx="2e-06" iyy="1e-06" izz="1e-06" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.403647 -0.709129 -0.641764" rpy="0 0 0"/>
+    <origin xyz="-0.08059 -0.001689 -0.060068" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find navexbot_description)/meshes/Sensor_Mount_Bracket_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.403647 -0.709129 -0.641764" rpy="0 0 0"/>
+    <origin xyz="-0.08059 -0.001689 -0.060068" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find navexbot_description)/meshes/Sensor_Mount_Bracket_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -258,19 +258,19 @@
 
 <link name="Ultrasonic_Sensor_1">
   <inertial>
-    <origin xyz="0.004740241788209754 -0.020349851908894268 -0.008123108036771298" rpy="0 0 0"/>
+    <origin xyz="0.004740381871565155 -0.02035033093842032 -0.00812316282233208" rpy="0 0 0"/>
     <mass value="0.011000008055678936"/>
     <inertia ixx="2e-06" iyy="0.0" izz="2e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.412647 -0.729479 -0.674614" rpy="0 0 0"/>
+    <origin xyz="-0.08959 -0.022039 -0.092918" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find navexbot_description)/meshes/Ultrasonic_Sensor_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.412647 -0.729479 -0.674614" rpy="0 0 0"/>
+    <origin xyz="-0.08959 -0.022039 -0.092918" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find navexbot_description)/meshes/Ultrasonic_Sensor_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -279,19 +279,19 @@
 
 <link name="Arduino_Mega_1">
   <inertial>
-    <origin xyz="-0.024846763315189813 0.029165414649865662 0.002801318343375492" rpy="0 0 0"/>
+    <origin xyz="-0.0248466232318342 0.029164935620340074 0.0028012635578150286" rpy="0 0 0"/>
     <mass value="0.03699959187591482"/>
     <inertia ixx="4.2e-05" iyy="1e-05" izz="5.1e-05" ixy="-1e-06" iyz="1e-06" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.344664 -0.670609 -0.628604" rpy="0 0 0"/>
+    <origin xyz="-0.021607 0.036831 -0.046908" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find navexbot_description)/meshes/Arduino_Mega_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.344664 -0.670609 -0.628604" rpy="0 0 0"/>
+    <origin xyz="-0.021607 0.036831 -0.046908" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find navexbot_description)/meshes/Arduino_Mega_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -300,19 +300,19 @@
 
 <link name="Expansion_Board_1">
   <inertial>
-    <origin xyz="-0.026262400610660375 -0.010374095757324175 0.0033160189980177" rpy="0 0 0"/>
+    <origin xyz="-0.026262260527304696 -0.01037457478684979 0.0033159642124570912" rpy="0 0 0"/>
     <mass value="0.019018596989076455"/>
     <inertia ixx="6e-06" iyy="5e-06" izz="1e-05" ixy="0.0" iyz="0.0" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.344914 -0.726409 -0.638704" rpy="0 0 0"/>
+    <origin xyz="-0.021857 -0.018969 -0.057008" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find navexbot_description)/meshes/Expansion_Board_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.344914 -0.726409 -0.638704" rpy="0 0 0"/>
+    <origin xyz="-0.021857 -0.018969 -0.057008" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find navexbot_description)/meshes/Expansion_Board_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -320,59 +320,59 @@
 </link>
 
 <joint name="Revolute 16" type="continuous">
-  <origin xyz="0.685046 1.461895 1.179142" rpy="0 0 0"/>
+  <origin xyz="0.038932 0.047014 0.01575" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Wheel_LF_1"/>
   <axis xyz="-0.0 1.0 0.0"/>
 </joint>
 
 <joint name="Revolute 17" type="continuous">
-  <origin xyz="0.603115 1.461895 1.179142" rpy="0 0 0"/>
+  <origin xyz="-0.042999 0.047014 0.01575" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Wheel_LB_1"/>
-  <axis xyz="-0.0 -1.0 -0.0"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
 </joint>
 
 <joint name="Revolute 18" type="continuous">
-  <origin xyz="0.685046 1.368789 1.179142" rpy="0 0 0"/>
+  <origin xyz="0.038932 -0.046092 0.01575" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Wheel_RF_1"/>
-  <axis xyz="0.0 1.0 0.0"/>
+  <axis xyz="0.0 1.0 -0.0"/>
 </joint>
 
 <joint name="Revolute 19" type="continuous">
-  <origin xyz="0.603115 1.368789 1.179142" rpy="0 0 0"/>
+  <origin xyz="-0.042999 -0.046092 0.01575" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Wheel_RB_1"/>
-  <axis xyz="0.0 -1.0 -0.0"/>
+  <axis xyz="0.0 -1.0 0.0"/>
 </joint>
 
 <joint name="Rigid 20" type="fixed">
-  <origin xyz="0.726234 1.435644 1.163392" rpy="0 0 0"/>
+  <origin xyz="0.08012 0.020763 0.0" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Line_Tracking_Module_1"/>
 </joint>
 
 <joint name="Rigid 21" type="fixed">
-  <origin xyz="0.368133 0.707504 0.736604" rpy="0 0 0"/>
+  <origin xyz="0.045076 6.4e-05 0.154908" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Lidar_1"/>
 </joint>
 
 <joint name="Rigid 22" type="fixed">
-  <origin xyz="0.591189 1.414945 1.2743" rpy="0 0 0"/>
+  <origin xyz="-0.054924 6.4e-05 0.110908" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Power_Bank_1"/>
 </joint>
 
 <joint name="Rigid 23" type="fixed">
-  <origin xyz="0.392633 0.688504 0.692604" rpy="0 0 0"/>
+  <origin xyz="0.069576 -0.018936 0.110908" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Raspberry_Pi_5_1"/>
 </joint>
 
 <joint name="Rigid 24" type="fixed">
-  <origin xyz="0.424972 0.690029 0.628604" rpy="0 0 0"/>
+  <origin xyz="0.101915 -0.017411 0.046908" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Dead_Plate_1"/>
 </joint>
@@ -397,7 +397,7 @@
 </joint>
 
 <joint name="Rigid 28" type="fixed">
-  <origin xyz="0.344664 0.670609 0.628604" rpy="0 0 0"/>
+  <origin xyz="0.021607 -0.036831 0.046908" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Arduino_Mega_1"/>
 </joint>
