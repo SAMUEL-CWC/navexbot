@@ -1,1 +1,7 @@
 .vscode
+
+# Isaac Sim folders
+navexbot_description/urdf/navexbot/
+*.usd
+*.usda
+*.usdc
