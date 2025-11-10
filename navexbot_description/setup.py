@@ -14,7 +14,10 @@ setup(
         (os.path.join("share", package_name, "launch"), glob("launch/*.launch.py")),
         (
             os.path.join("share", package_name, "urdf"),
-            glob("urdf/*.xacro") + glob("urdf/*.urdf"),
+            glob("urdf/*.xacro")
+            + glob("urdf/*.urdf")
+            + glob("urdf/*.trans")
+            + glob("urdf/*.gazebo"),
         ),
         (os.path.join("share", package_name, "meshes"), glob("meshes/*")),
         (os.path.join("share", package_name, "config"), glob("config/*")),
